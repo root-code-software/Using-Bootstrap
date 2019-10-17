@@ -1,0 +1,26 @@
+body {
+  background-color: $gray-200;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+header {
+  width: 100%;
+}
+
+main {
+  width: 100%;
+  max-width: 1330px;
+  background-color: white;
+}
+
+.btn {
+  background-color: transparent;
+  font-family: $headings-font-family;
+  font-size: 1.2em;
+  padding: 1px 10px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}

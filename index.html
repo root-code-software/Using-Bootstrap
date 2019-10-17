@@ -1,13 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Using Bootstrap</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="navbar-top-sticky">
+      <img src="img/logo.png" height="20" class="d-inline-block align-top" alt="newsweek" />
+      <form class="nav-form">
+        <button class="btn nav-form__signin" type="submit">SIGN IN</button>
+        <button class="btn nav-form__subscribe" type="submit">SUBSCRIBE ></button> <button class="btn nav-form__menu">☰</button>
+      </form>
+    </header>
+    <main>
+      <div class="navbar-desktop">
+        <div class="navbar-desktop__head">
+          <span class="navbar-desktop__date" id="demo"></span>
+          <img src="img/logo.png" height="60" alt="newsweek" />
+          <form class="nav-form">
+            <button class="btn nav-form__signin" type="submit">SIGN IN</button>
+            <button class="btn nav-form__subscribe" type="submit">SUBSCRIBE ></button>
+          </form>
+        </div>
+        <div class="navbar-desktop__nav"></div>
+      </div>
+    </main>
+
+    <script>
+      const date = new Date();
+      var [s, m, d, y] = date
+        .toDateString()
+        .split(" ")
+        .filter((_, i) => i < 4);
+      document.getElementById("demo").innerHTML = `${s}, ${m} ${d}, ${y}`;
+    </script>
+  </body>
 </html>

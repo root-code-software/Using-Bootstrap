@@ -1,0 +1,52 @@
+.navbar-top-sticky {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $primary;
+  padding: 0 20px;
+  height: 50px;
+}
+
+.nav-form {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+
+  &__signin {
+    color: $white;
+  }
+
+  &__subscribe {
+    background-color: white;
+    color: $red;
+  }
+
+  &__menu {
+    background-color: transparent;
+    color: #fb9a94;
+    font-size: 2em;
+    margin-left: 20px;
+    transform: scale(1.2, 0.85);
+  }
+}
+
+.navbar-desktop {
+  display: none;
+
+  &__head {
+    width: 100%;
+    background-color: $primary;
+    color: white;
+    height: 95px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0 10px 20px 20px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .navbar-desktop {
+    display: flex;
+  }
+}
