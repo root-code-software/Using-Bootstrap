@@ -42,11 +42,76 @@
     align-items: flex-end;
     justify-content: space-between;
     padding: 0 10px 20px 20px;
+    font-family: $headings-font-family;
+  }
+
+  &__white {
+    display: flex;
+    align-items: flex-start;
+    height: 50px;
+    width: 100%;
+    background:
+      linear-gradient(
+        to bottom,
+        rgba(247, 34, 16, 1) 0%,
+        rgba(247, 34, 16, 1) 49%,
+        rgba(216, 225, 231, 1) 50%,
+        rgba(255, 255, 255, 1) 51%,
+        rgba(255, 255, 255, 1) 100%
+      );
+  }
+
+  &__nav {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    list-style: none;
+    padding: 0;
+
+    & a {
+      color: black;
+      font-weight: bold;
+      font-size: 1.3em;
+      font-family: $headings-font-family;
+      padding: 0 20px;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+
+    & span {
+      border-right: 1px solid gray;
+      height: 40px;
+    }
+
+    & input {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      width: 80px;
+      background-image: url("../icons/search.png");
+      background-repeat: no-repeat;
+      background-position: right;
+    }
+
+    &-after {
+      height: 50px;
+      border-style: solid;
+      border-width: 30px 0 0 30px;
+      border-color: transparent transparent transparent #fff;
+    }
+  }
+
+  &__link {
+    margin: 15px 10px;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .navbar-desktop {
     display: flex;
+    flex-wrap: wrap;
   }
 }
