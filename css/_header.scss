@@ -19,6 +19,11 @@
   &__subscribe {
     background-color: white;
     color: $red;
+
+    &::after {
+      font-size: 1.3em;
+      content: ">";
+    }
   }
 
   &__menu {
@@ -110,6 +115,10 @@
 }
 
 @media only screen and (min-width: 1200px) {
+  .navbar-top-sticky {
+    display: none;
+  }
+
   .navbar-desktop {
     display: flex;
     flex-wrap: wrap;
