@@ -10581,3 +10581,7 @@ main {
   margin: 0;
   background-color: yellow;
 }
+
+.footer-content svg {
+  color: gray;
+}
