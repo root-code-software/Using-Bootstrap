@@ -1,6 +1,7 @@
 # Using-Bootstrap
 This project requests students to build a replica of the news site Newsweek.com using the Bootstrap framework.
 
+[Live Version](https://israel-laguan.github.io/Using-Bootstrap/)
 # Preview
 
 ![PREVIEW](img/preview.png)
